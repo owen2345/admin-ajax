@@ -1,0 +1,22 @@
+{
+  "title": "Camaleon Admin Ajax",
+  "descr": "Permit to navigate 60% faster in backend. More info: <a target='_blank' href='http://camaleon.tuzitio.com/store/plugins/admin_ajax'>here.</a>",
+  "version": "0.1",
+  "key": "camaleon_admin_ajax",
+  "helpers": [
+    "Plugins::CamaleonAdminAjax::MainHelper"
+  ],
+  "hooks": {
+    "on_active": [
+      "camaleon_admin_ajax_on_active"
+    ],
+    "on_inactive": [
+      "camaleon_admin_ajax_on_inactive"
+    ],
+    "on_upgrade": [
+      "camaleon_admin_ajax_on_upgrade"
+    ],
+    "admin_before_load": ["camaleon_admin_ajax_admin_before_load"]
+    //here you can add all your hooks (read documentation)
+  }
+}
